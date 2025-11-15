@@ -881,6 +881,7 @@ svg {
     width: 100%;
     margin-top: 20px;
     list-style-type: none;
+    z-index: -1;
 }
 
 .timeline:before {
