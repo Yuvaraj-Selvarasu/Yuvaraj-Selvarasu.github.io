@@ -99,3 +99,15 @@ function downloadPDF(button) {
   // Reset animation after 3s
   setTimeout(() => button.classList.remove("active"), 5000);
 }
+
+document.querySelectorAll(".navbar-list li").forEach(item => {
+  item.addEventListener("click", () => {
+    const navBarSec = document.querySelector(".navbar");
+    navBarSec.classList.remove("active");
+
+    // also remove toggle button active state if needed
+    const navToggleBtn = document.querySelector(".nav-toggle-btn");
+    navToggleBtn.classList.remove("active");
+  });
+});
+
